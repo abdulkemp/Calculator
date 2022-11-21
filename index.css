@@ -1,0 +1,101 @@
+body{
+    background-color: brown;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.heading{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    margin: 2px;
+    border-radius: 2px;
+    padding: 16px 8px;
+    font-size: 25px;
+    border: 1px solid black;
+    background-color: rgb(215, 212, 212);
+}
+
+.container{
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.container1{
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.buttons{
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.button{
+    background: grey;
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+    border-radius: 2px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.button-is-clear, .equalButton-is-equal{
+    grid-column: span 2;
+}
+
+.button-is-clear{
+    background-color: blue;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.equalButton-is-equal{
+    background-color: blue;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+/*hover*/
+.button:hover{
+    background-color: rgb(31, 28, 28);
+    transition: 0.8s;
+}
+.equalButton-is-equal:hover{
+    background-color: rgb(31, 28, 28);
+    transition: 0.8s;
+}
+.button-is-clear:hover{
+    background-color: rgb(31, 28, 28);
+    transition: 0.8s;
+}
